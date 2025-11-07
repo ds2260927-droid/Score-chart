@@ -3,7 +3,7 @@ import pandas as pd
 import os
 
 # ======== CONFIG ========
-DATA_FILE = "C:\Users\ds226\OneDrive\Desktop\india_cricket_runs.csv"
+DATA_FILE = "C:/Users/ds226/OneDrive/Desktop/india_cricket_runs.csv"
 
 # ======== LOAD DATA ========
 @st.cache_data
@@ -51,5 +51,6 @@ if st.button("Show Runs"):
             st.metric("Total Runs (Team)", total_runs)
             st.metric("Average Runs per Player", round(avg_runs, 2))
             st.metric("Top Scorer", f"{top_scorer['Player']} ({top_scorer['Runs']} runs)")
+
 
 
